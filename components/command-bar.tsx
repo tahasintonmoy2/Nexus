@@ -77,7 +77,9 @@ const CommandBar: React.FC<CommandBarProps> = ({
             className=" overflow-hidden relative rounded-xl shadow-2xl divide-y divide-gray-200 bg-white mx-auto max-w-xl"
             onChange={(item) => {
               toggle();
-              router.push(`/product/${item}`)
+              {filterProducts.map((item) => (
+                router.push(`/product/${item.id}`)
+              ))}
             }}
           >
             <div className="flex justify-center items-center">

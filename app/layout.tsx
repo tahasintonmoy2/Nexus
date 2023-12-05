@@ -20,13 +20,11 @@ export default async function Rootlayout({
 }: {
   children: React.ReactNode;
 }) {
-  const products = await getProducts({ isFeatured: true });
 
   return (
    <ClerkProvider>
     <html lang="en">
       <body className={inter.className}>
-        <CommandBar items={products} />
         <ModalProvider />
         <ToastProvider />
         {children}
