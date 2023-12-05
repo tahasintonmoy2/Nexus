@@ -33,7 +33,7 @@ export const NavbarActions = () => {
     <div className="md:ml-auto lg:ml-auto ml-0 flex items-center ">
       <button
         onClick={search.onOpen}
-        className="flex relative md:hidden lg:hidden md:ml-40 lg:ml-40 ml-16 mb-3 mr-2 items-center py-1 pl-9"
+        className="flex relative md:hidden lg:hidden md:ml-40 lg:ml-40 ml-24 mb-3 mr-2 items-center py-1 pl-9"
       >
         <Search className="h-5 w-5 absolute my-2 left-3" />
       </button>
