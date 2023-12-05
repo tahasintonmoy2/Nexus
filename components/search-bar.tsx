@@ -13,7 +13,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
   return (
     <>
     <div className="md:block hidden" onClick={onClick}>
-      <div className="w-56 flex relative ml-0 mr-2 overflow-hidden justify-between items-center cursor-pointer md:w-[400px] lg:w-[400px] py-1 md:pl-9 lg:pl-9 pl-4 rounded-md bg-slate-200 focus-visible:ring-slate-200">
+      <div className="w-44 flex relative ml-0 mr-2 overflow-hidden justify-between items-center cursor-pointer md:w-[400px] lg:w-[400px] py-1 md:pl-9 lg:pl-9 pl-4 rounded-md bg-slate-200 focus-visible:ring-slate-200">
         <Search className="h-4 w-4 absolute my-2 left-3 text-slate-500" />
         <div
           className="text-slate-500 flex items-center justify-start cursor-pointer w-full bg-transparent focus:outline-none focus-visible:ring-transparent"
