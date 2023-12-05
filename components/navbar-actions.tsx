@@ -74,7 +74,6 @@ export const NavbarActions = () => {
                       <Tab.Group>
                         <Tab.List className="flex space-x-1 rounded-xl w-full">
                           <Tab
-                            key={"category"}
                             className={({ selected }) =>
                               cn(
                                 "w-full rounded-lg py-2.5 flex items-center justify-center text-sm font-medium leading-5 ring-offset-transparent focus:outline-none focus:ring-transparent",
@@ -88,7 +87,6 @@ export const NavbarActions = () => {
                             My Cart ({cart.items.length})
                           </Tab>
                           <Tab
-                            key={"category"}
                             className={({ selected }) =>
                               cn(
                                 "w-full rounded-lg py-2.5 flex items-center justify-center text-sm font-medium leading-5 ring-offset-transparent focus:outline-none focus:ring-transparent",
@@ -104,10 +102,8 @@ export const NavbarActions = () => {
                         </Tab.List>
                         <Tab.Panels className="mt-2">
                           <Tab.Panel
-                            key={"idx"}
                             className={cn(
                               "rounded-xl bg-white p-3 ring-offset-transparent focus:outline-none focus:ring-transparent",
-                              ""
                             )}
                           >
                             <div className="mb-2 text-blue-600 hover:text-blue-400 font-semibold text-sm flex items-center justify-end">
@@ -162,7 +158,6 @@ export const NavbarActions = () => {
                             </div>
                           </Tab.Panel>
                           <Tab.Panel
-                            key={"idx"}
                             className={cn(
                               "rounded-xl bg-white p-3",
                               "ring-white/60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
