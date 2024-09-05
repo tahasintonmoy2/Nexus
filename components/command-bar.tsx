@@ -12,9 +12,7 @@ interface CommandBarProps {
   valueKey?: string;
 }
 
-const CommandBar: React.FC<CommandBarProps> = ({ 
-  items
-}) => {
+const CommandBar: React.FC<CommandBarProps> = ({ items }) => {
   const [query, setQuery] = useState("");
 
   const toggle = useSearch((store) => store.toggle);
@@ -77,9 +75,11 @@ const CommandBar: React.FC<CommandBarProps> = ({
             className=" overflow-hidden relative rounded-xl shadow-2xl divide-y divide-gray-200 bg-white mx-auto max-w-xl"
             onChange={(item) => {
               toggle();
-              {filterProducts.map((item) => (
-                router.push(`/product/${item.id}`)
-              ))}
+              {
+                filterProducts.map((item) =>
+                  router.push(`/product/${item.id}`)
+                );
+              }
             }}
           >
             <div className="flex justify-center items-center">

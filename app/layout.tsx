@@ -5,7 +5,6 @@ import ToastProvider from "@/components/providers/toast-provider";
 import ModalProvider from "@/components/providers/modal-provider";
 import CommandBar from "@/components/command-bar";
 import React from "react";
-import getProducts from "@/actions/get-products";
 import { ClerkProvider } from "@clerk/nextjs";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -20,16 +19,15 @@ export default async function Rootlayout({
 }: {
   children: React.ReactNode;
 }) {
-
   return (
-   <ClerkProvider>
-    <html lang="en">
-      <body className={inter.className}>
-        <ModalProvider />
-        <ToastProvider />
-        {children}
-      </body>
-    </html>
-   </ClerkProvider> 
+    <ClerkProvider>
+      <html lang="en">
+        <body className={inter.className}>
+          <ModalProvider />
+          <ToastProvider />
+          {children}
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }

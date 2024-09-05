@@ -1,13 +1,13 @@
-import getProducts from '@/actions/get-products'
-import CommandBar from '@/components/command-bar'
-import Footer from '@/components/footer'
-import Navbar from '@/components/navbar'
-import React from 'react'
+import getProducts from "@/actions/get-products";
+import CommandBar from "@/components/command-bar";
+import Footer from "@/components/footer";
+import Navbar from "@/components/navbar";
+import React from "react";
 
-const Layout = async({
-    children
-}:{
-    children: React.ReactNode
+const Layout = async ({
+  children
+}: {
+  children: React.ReactNode
 }) => {
   const products = await getProducts({ isFeatured: true });
 
@@ -20,7 +20,7 @@ const Layout = async({
         <Footer />
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

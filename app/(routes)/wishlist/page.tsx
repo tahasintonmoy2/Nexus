@@ -23,12 +23,12 @@ const CartPage = () => {
     <div className="">
       <Container>
         <div className="px-4 py-16 sm:px-6 lg:px-8">
-         <div className="flex items-center justify-between">
-          <h1 className="text-3xl font-semibold">
-            My Wishlist ({wishlist.items.length})
-          </h1>
+          <div className="flex items-center justify-between">
+            <h1 className="text-3xl font-semibold">
+              My Wishlist ({wishlist.items.length})
+            </h1>
             <CartItemMenu />
-         </div> 
+          </div>
           <div className="mt-12 lg:grid lg:grid-cols-12 lg:items-start">
             <div className="lg:col-span-7">
               {wishlist.items.length === 0 && (
@@ -36,10 +36,10 @@ const CartPage = () => {
               )}
               <ul>
                 {wishlist.items.map((item) => (
-                    <CartItem 
-                      key={item.id}
-                      data={item}
-                    />
+                  <CartItem 
+                   key={item.id} 
+                   data={item} 
+                  />
                 ))}
               </ul>
             </div>

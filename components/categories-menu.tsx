@@ -15,10 +15,10 @@ import { useRouter } from "next/navigation";
 
 interface CategoriesMenuProps {
   data: Category[];
-  icon: React.ReactElement
+  icon: React.ReactElement;
 }
 
-const CategoriesMenu: React.FC<CategoriesMenuProps> = ({ 
+const CategoriesMenu: React.FC<CategoriesMenuProps> = ({
   data,
   icon
 }) => {
@@ -35,13 +35,9 @@ const CategoriesMenu: React.FC<CategoriesMenuProps> = ({
     <>
       <DropdownMenu>
         <DropdownMenuTrigger className="focus:outline-none text-slate-600 focus-visible:ring-transparent">
-            {icon}
+          {icon}
         </DropdownMenuTrigger>
-        <DropdownMenuContent
-          align="start"
-          alignOffset={11}
-          forceMount
-        >
+        <DropdownMenuContent align="start" alignOffset={11} forceMount>
           <DropdownMenuLabel>Categories Menu</DropdownMenuLabel>
           <DropdownMenuSeparator />
           {routes.map((route) => (

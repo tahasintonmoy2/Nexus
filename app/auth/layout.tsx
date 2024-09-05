@@ -1,13 +1,13 @@
 import React from 'react'
 
 const Layout = ({
-    children
+  children
 }:{
-    children: React.ReactNode
+  children: React.ReactNode
 }) => {
   return (
     <div className='flex items-center justify-center h-screen'>
-        {children}
+      {children}
     </div>
   )
 }

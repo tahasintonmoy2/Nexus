@@ -1,17 +1,15 @@
-import React from 'react'
+import React from "react";
 
 const Categorylayout = ({
-    children
-}:{
-    children: React.ReactNode
+  children
+}: {
+  children: React.ReactNode
 }) => {
   return (
     <div>
-        <main>
-            {children}
-        </main>
+      <main>{children}</main>
     </div>
-  )
-}
+  );
+};
 
-export default Categorylayout
+export default Categorylayout;
